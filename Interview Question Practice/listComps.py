@@ -65,6 +65,17 @@ you can do this
 square_dict = {num:num**2 for num in numbers}
 print(square_dict)
 
+# editing a dictionary
+
+old_price = {"milk" : 1.02, "coffee" : 2.5 , "bread" : 2.5}
+
+
+# modify the entry values if they are greater than 2, use the same key and value
+
+new_price = {key : value*1.5 if value > 2 else value for (key, value) in old_price.items()}
+
+print(new_price)
+
 
 
 
